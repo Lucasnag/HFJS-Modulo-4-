@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="modulo4.js"></script>
+    <style type="text/css">
+        span.decision {
+          font-weight:bold;
+          border:thin solid #000000;
+          padding:5px;
+          background-color:#DDDDDD;
+        }
+        span.decisionhover {
+          font-weight:bold;
+          border:thin solid #000000;
+          padding:5px;
+          background-color:#EEEEEE;
+        }
+      </style>
+</head>
+<body>
+        <div style="margin-top:100px; text-align:center">
+        <img id="sceneimg" src="scene0.png" alt="Stick Figure Adventure" /><br />
+        <div id="scenetext"></div><br />
+        <span id="decision1" class="decision" onclick="changeScene(1)"
+          onmouseover="this.className = 'decisionhover'"
+          onmouseout="this.className = 'decision'">Start Game</span>
+        <span id="decision2" class="decision" onclick="changeScene(2)"
+          onmouseover="this.className = 'decisionhover'"
+          onmouseout="this.className = 'decision'"
+          style="visibility:hidden"></span>
+        <div id="history" style="background-color:#EEEEEE"></div>
+      </div>
+
+</body>
+</html>
+        
